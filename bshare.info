@@ -1,0 +1,13 @@
+name = BShare
+description = Add the BShare widget to nodes on your site.
+core = 7.x
+package = Shinetech
+configure = admin/config/services/bshare
+
+; Views handlers
+
+; Information added by drupal.org packaging script on 2012-10-10
+version = "0.1"
+project = "bshare"
+datestamp = "1349883717"
+

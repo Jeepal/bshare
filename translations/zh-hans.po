@@ -1,0 +1,148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BShare\n"
+"POT-Creation-Date: 2012-10-23 16:21+0800\n"
+"PO-Revision-Date: 2012-10-23 16:21+0800\n"
+"Last-Translator: \n"
+"Language-Team: shinetechchina <netwolf103@gmail.com>\n"
+"Language: CHINA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;t\n"
+"X-Poedit-Basepath: X:\\drupal7\\sites\\all\\modules\\bshare\\\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: bshare.module:27
+msgid "This plugin places the BShare widget on each node."
+msgstr "在每个内容节点后面显示分享按钮"
+
+#: bshare.module:39
+msgid "Administer Bshare"
+msgstr "管理-BShare"
+
+#: bshare.module:40
+msgid "Change the settings for how BShare behaves on the site."
+msgstr "功能设置-BShare"
+
+#: includes/bshare.admin.inc:18
+msgid "BShare Settings"
+msgstr "配置BShare分享工具"
+
+#: includes/bshare.admin.inc:23
+msgid "Display Style:"
+msgstr "显示"
+
+#: includes/bshare.admin.inc:30
+msgid "Bar"
+msgstr "横条"
+
+#: includes/bshare.admin.inc:31
+#, fuzzy
+msgid "Button"
+msgstr "按钮样式"
+
+#: includes/bshare.admin.inc:32
+msgid "Suspension"
+msgstr "悬浮"
+
+#: includes/bshare.admin.inc:42
+msgid "Button Style:"
+msgstr "按钮"
+
+#: includes/bshare.admin.inc:49
+msgid "Mini"
+msgstr "迷你"
+
+#: includes/bshare.admin.inc:50
+msgid "Standard"
+msgstr "标准"
+
+#: includes/bshare.admin.inc:51
+msgid "Big"
+msgstr "宽阔"
+
+#: includes/bshare.admin.inc:61
+msgid "Share Views:"
+msgstr "分享次数"
+
+#: includes/bshare.admin.inc:68
+msgid "YES"
+msgstr "是"
+
+#: includes/bshare.admin.inc:69
+msgid "NO"
+msgstr "否"
+
+#: includes/bshare.admin.inc:79
+msgid "Location"
+msgstr "显示位置"
+
+#: includes/bshare.admin.inc:85
+msgid "Node content"
+msgstr "内容底部"
+
+#: includes/bshare.admin.inc:86
+msgid "Block"
+msgstr "区块"
+
+#: includes/bshare.admin.inc:87
+msgid "Links area"
+msgstr "链接"
+
+#: includes/bshare.admin.inc:88
+msgid "Custom"
+msgstr "自定义"
+
+#: includes/bshare.admin.inc:92
+msgid ""
+"Select where the ShareThis widget should appear. When selected to display as "
+"a block, you must choose which region to display the <em>ShareThis block</"
+"em> in from the <a href=\"@blocksadmin\">Blocks administration</a>."
+msgstr ""
+"选择分享显示的位置。当选择显示为区块时，还必须从<a href=\"@blocksadmin\">这里"
+"</a>.选择区块显示的位置。"
+
+#: includes/bshare.func.inc:65
+#, fuzzy
+msgid "Share to"
+msgstr "分享到新浪微博"
+
+#: includes/bshare.func.inc:91
+msgid "Share to QZone"
+msgstr "分享到QQ空间"
+
+#: includes/bshare.func.inc:92
+#, fuzzy
+msgid "Share to Sina MiniBlog"
+msgstr "分享到新浪微博"
+
+#: includes/bshare.func.inc:93
+#, fuzzy
+msgid "Share to RenRen"
+msgstr "分享到人人网"
+
+#: includes/bshare.func.inc:94
+msgid "Share to Tencent"
+msgstr "分享到腾讯微博"
+
+#: includes/bshare.func.inc:95
+#, fuzzy
+msgid "Share to Douban"
+msgstr "分享到豆瓣"
+
+#: includes/bshare.func.inc:96
+msgid "Share to Others"
+msgstr "更多平台"
+
+#: includes/bshare.block.inc:14
+msgid "BShare"
+msgstr "BShare分享工具"
+
+#~ msgid "Display"
+#~ msgstr "显示风格"
+
+#~ msgid "Add the BShare widget to nodes on your site."
+#~ msgstr "添加bshare分享小工具到您的网站"

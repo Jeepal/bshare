@@ -1,0 +1,18 @@
+
+-- SUMMARY --
+
+Add This module provides Drupal integration to bshare.cn link sharing service. Integration has been implemented as a field.
+
+-- REQUIREMENTS --
+
+Note
+
+-- INSTALLATION --
+
+Normal Drupal module installation, see http://drupal.org/node/70151 for further information.
+
+
+-- CONTACT --
+
+Current maintainers:
+* Zhang Zhao (netwolf103@gmail.com) - http://drupal.org/user/2355614

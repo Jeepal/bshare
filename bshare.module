@@ -1,0 +1,87 @@
+<?php
+/**
+ * @file
+ * A module that adds one of the BShare widget to your website.
+ */
+
+// ---------------------------------------------------------------------------------
+
+/**
+ * Module Path
+ */
+define( 'BSHARE_PATH', DRUPAL_ROOT . '/' . drupal_get_path('module', 'bshare') );
+/**
+ * Module includes directory
+ */
+define( 'BSHARE_INCLUDE', 'includes/' );
+
+/**
+ * BShare button style (min)
+ */
+define( 'BSHARE_BUTTON_STYLE_MINI', 1 );
+
+/**
+ * BShare button style (standard)
+ */
+define( 'BSHARE_BUTTON_STYLE_STANDARD', 2 );
+
+/**
+ * BShare button style (big)
+ */
+define( 'BSHARE_BUTTON_STYLE_BIG', 3 );
+
+/**
+ *
+ * Include library file 
+ *		(bshare.func.inc, bshare.note.inc, bshare.block.inc, bshare.admin.inc)
+ */
+foreach( array('func', 'note', 'block', 'admin') as $name ) {
+	module_load_include('inc', 'bshare', 'includes/bshare.'.$name) || 
+		die( '"' . BSHARE_PATH . '/' .BSHARE_INCLUDE. "bshare.$name.inc" . '" file not exists.');
+}
+
+/**
+ * Implements hook_help.
+ *
+ * @return string
+ */
+function bshare_help($path, $arg) {
+	switch ($path) {
+		case "admin/help#bshare":
+			$return = '<p>' . t("This plugin places the BShare widget on each node.") . '</p>';
+			return $return;
+		break;
+	}
+}
+
+/**
+ * Implements hook_permission().
+ *
+ * @return array
+ */
+function bshare_permission() {
+	return array(
+		'administer bshare' => array(
+			'title' => t('Administer Bshare'), 
+			'description' => t('Change the settings for how BShare behaves on the site.'),
+		),
+	);
+}
+ 
+ /**
+ * Implements hook_menu.
+ *
+ * @return array
+ */
+function bshare_menu() {
+	$items['admin/config/services/bshare'] = array(
+		'title' => 'BShare',
+		'description' => 'Choose the widget, button family, and services for using BShare to share content online.',
+		'page callback' => 'drupal_get_form',
+		'page arguments' => array('bshare_configuration_form'),
+		'access arguments' => array('administer bshare'),
+		'file' => BSHARE_INCLUDE . '/bshare.admin.inc',
+	);
+
+	return $items;
+}
